@@ -1,0 +1,543 @@
+/* BODY */
+html{
+    font-size: 100%;
+    line-height: 1.2rem;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    background-color: rgba(253, 244, 244, 30%);
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: medium;
+    margin: 0px;
+}
+/*-------------------------------------------*/
+/* MAIN NAV */
+nav {
+    margin-bottom: 30px;
+}
+
+.main-nav{
+    background-color: rgb(253, 249, 249);
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding: 20px;
+    margin: 0px;
+}
+
+.main-nav li {
+    padding: 5px 10px;
+}
+
+.main-nav li a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s, font-weight 0.3s;
+}
+
+.main-nav li a:hover {
+    color: purple;
+    font-weight: bold;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: rgb(253, 249, 249);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+/* ---------------------------------- */
+
+/* INDEX */
+.grid-system-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 900px;
+    margin: 60px auto;
+    align-items: center;
+    padding: 10px;
+}
+
+.align-center {
+    text-align: center;
+    align-self: center;
+}
+
+.medium-spacing {
+    font-family: 'Oswald', Arial, sans-serif;
+    font-weight: normal;
+    line-height: 1.1;
+    font-size: clamp(2rem, 5vw, 4rem);
+    letter-spacing: 4px;
+    margin: 0;
+}
+
+.large {
+    font-family: 'Oswald', Arial, sans-serif;
+    font-weight: bold;
+    font-size: clamp(3rem, 8vw, 5rem);
+    line-height: 1.1;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin: 0;
+    background-image: linear-gradient(135deg, rgb(250, 113, 283) 0%, rgb(255, 142, 134) 60%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+    background: rgb(254, 175, 210);
+    transform: scale(1.1);
+}
+
+.header-img {
+    width: 100%;
+    max-width: 380px;
+    max-height: 350px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+/* ---------------------------------- */
+
+/* ABOUT ME */
+.grid-system {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+.main-title-large {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 3rem;
+   color: #111;
+}
+.polaroid {
+    background: rgba(20, 20, 20, 0.7);
+    padding: 12px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+}
+
+.polaroid:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.9);
+}
+
+.polaroid img {
+    border-radius: 16px;
+    max-width: 380px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.08); 
+    border: 1px solid rgba(255, 255, 255, 0.05); 
+    transition: transform 0.3s ease;
+}
+.icon-card {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.6);
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.icon-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.8);
+  background: #f0f0f0;
+}
+
+.icon-card i {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #555;
+  transition: color 0.3s;
+}
+
+.icon-card h4 {
+  color: #111;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* ---------------------------------- */
+
+/* SKILL-SET */
+.logo-row {
+  text-align: center;
+}
+
+.main-title-medium{
+  margin-bottom: 1rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 2rem;
+  color: #111;
+}
+
+.logo-card {
+  background: #ffffff; 
+  border-radius: 10px;
+  padding: 0.5rem;
+  width: 100px;
+  height: 100px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex: 0 0 auto;
+}
+
+.logo-card img {
+  max-height: 60px; 
+  max-width: 100%;
+}
+
+.logo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 1rem 0;
+  gap: 0;
+}
+
+.logo-slider {
+  overflow: hidden;
+  width: calc((113px + 1rem) * 5);
+  margin: 0;
+}
+
+.logo-track {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: transform 0.5s ease;
+  gap: 1rem;
+}
+
+.slider-btn {
+  background-color: rgba(37, 37, 37, 0.1);
+  color: #333;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  margin: 0 0.25rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.slider-btn:hover {
+   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.soft-skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 0;
+  margin: 20px auto 40px;
+  list-style: none;
+  max-width: 900px;
+}
+
+.soft-skills-list li {
+  background-color: #fff;
+  border-left: 3px solid #8e44ad;
+  padding: 14px 18px;
+  border-radius: 10px;
+  color: black;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.soft-skills-list li i {
+  color:  #555;
+  font-size: 1.2rem;
+}
+
+.soft-skills-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+.soft-skills-list img {
+  width: 80px;
+  height: auto;
+  padding: 10px;
+}
+.soft-skills-list a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* ---------------------------------- */
+/* EDUCATION */
+.objectif-texte {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: justify;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+/* ---------------------------------- */
+/* EXPERIENCE*/
+.experience-section {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.experience-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.job-card {
+    display: flex;
+    align-items: flex-start;
+    background: #ffffff;
+    border: 1px solid #7e57c2; /* mismo estilo que soft-skills-list */
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    gap: 1rem;
+}
+
+.job-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.job-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #f9f9f9;
+    padding: 5px;
+}
+
+.job-info h3 {
+    font-size: 1.25rem;
+    margin: 0 0 0.25rem;
+    color: #222;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.job-info p {
+    margin: 0.15rem 0;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.job-info ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.job-info li {
+    margin-bottom: 0.5rem;
+    color: #333;
+    line-height: 1.4;
+}
+
+.job-info .highlight {
+    font-weight: 600;
+    color: #7e57c2; 
+}
+/* ---------------------------------- */
+
+/* FOOTER */
+footer{
+    color: #000000;
+    text-align: center;
+    padding: 20px 0px;
+}
+/* ---------------------------------- */
+
+/* DARK THEME */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgba(45, 45, 45, 1);
+        color: white;
+    }
+
+    .baby-pink {
+        background-color: rgb(243, 162, 200);
+    }
+
+    .baby-pink-light {
+        background-color: rgba(45, 45, 45, 1);
+        border: 2px solid rgb(243, 162, 200);
+    }
+
+    .main-nav {
+        background-color: rgba(45, 45, 45, 1);
+    }
+
+    .main-nav li a {
+        color: white;
+    }
+
+    .main-nav li a:hover {
+        color: rgb(254, 175, 210);
+    }
+
+    .main-title-large,  .main-title-medium { 
+        color: white;
+    }
+   
+    .polaroid {
+        background: rgba(20, 20, 20, 0.8); 
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+    }
+
+    .polaroid:hover {
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.9);
+    }
+
+    .polaroid img {
+        box-shadow: 0 0 18px rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .icon-card {
+        background: rgba(30, 30, 30, 0.8);
+        box-shadow: 0 2px 12px rgba(0,0,0,0.6);
+    }
+
+    .icon-card:hover {
+        background: rgba(45, 45, 45, 0.9);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.8);
+    }
+
+    .icon-card i {
+        color: #f0f0f0; 
+    }
+
+    .icon-card h4 {
+        color: #fff; 
+    }
+
+    .logo-card {
+    background: white;
+    }
+
+    .logo-card img {
+        filter: brightness(1.2);
+    }
+
+    .slider-btn {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #f5f5f5;
+    }
+
+    .slider-btn:hover {
+        background-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .soft-skills-list li {
+        background-color: white;
+        border-left: 3px solid #e91e63;
+        color: black;
+    }
+
+    .soft-skills-list li i {
+        color:  #e91e63;
+    }
+        .experience-section h2 {
+        color: #f5f5f5;
+    }
+
+    .job-card {
+        background: #2b2b2b;  
+        border: 1px solid #e91e63;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    .job-card:hover {
+        background: #2a2a2a;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.8);
+    }
+
+    .job-card img {
+        background: #2a2a2a;
+        border: 1px solid #444;
+    }
+
+    .job-info h3 {
+        color: #ffffff;
+    }
+
+    .job-info p {
+        color: #cccccc;
+    }
+
+    .job-info li {
+        color: #e0e0e0;
+    }
+
+    .job-info .highlight {
+        color: #e91e63;
+    }
+
+    footer {
+        color: white;
+    }
+    
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Claudia, desarrolladora Full-stack Python.">
+    <meta name="keywords" content="Portfolio, Claudia, Python, Full-stack, IA, Data">
+    <meta name="author" content="Claudia Palacio">
+    <title>Claudia - Portfolio</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navigation bar -->
+  <nav class="sticky">
+        <ul class="main-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-me.html">À propos</a></li>
+            <li><a href="skill-set.html">Skills</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="assets/claudiaPALACIO.pdf" download="Claudia_Palacio_CV.pdf">CV</a></li>
+        </ul>
+    </nav>
+
+    <!-- hard skills -->
+    <h2 class="main-title-large">Skills</h2>
+
+    <!-- Backend -->
+    <section class="logo-row">
+        <h3 class="main-title-medium">Technologies Backend</h3>
+        <div class="slider-wrapper">
+            <button class="slider-btn prev" onclick="slide(this, -1)">&#10094;</button>
+            <div class="logo-slider">
+                <div class="logo-track">
+                    <div class="logo-card"><img src="assets/python.png" alt="Python" /></div>
+                    <div class="logo-card"><img src="assets/java.png" alt="Java" /></div>
+                    <div class="logo-card"><img src="assets/django.png" alt="Django" /></div>
+                    <div class="logo-card"><img src="assets/rest.png" alt="Rest" /></div>
+                    <div class="logo-card"><img src="assets/flask.png" alt="Flask" /></div>
+                    <div class="logo-card"><img src="assets/postgres.png" alt="PostgreSQL" /></div>
+                    <div class="logo-card"><img src="assets/sql.png" alt="SQL" /></div>
+                </div>
+            </div>
+            <button class="slider-btn next" onclick="slide(this, 1)">&#10095;</button>
+        </div>
+    </section>
+    <!-- Data & IA -->
+    <section class="logo-row">
+        <h3 class="main-title-medium">Data & IA</h3>
+        <div class="slider-wrapper">
+            <button class="slider-btn prev" onclick="slide(this, -1)">&#10094;</button>
+            <div class="logo-slider">
+                <div class="logo-track">
+                    <div class="logo-card"><img src="assets/pandas.png" alt="Pandas" /></div>
+                    <div class="logo-card"><img src="assets/numpy.png" alt="NumPy" /></div>
+                    <div class="logo-card"><img src="assets/tensorflow.png" alt="TensorFlow" /></div>
+                    <div class="logo-card"><img src="assets/scikit-learn.png" alt="scikit-learn" /></div>
+                    <div class="logo-card"><img src="assets/plotly.png" alt="Plotly" /></div>
+                    <div class="logo-card"><img src="assets/matplotlib.png" alt="Matplotlib" /></div>
+                    <div class="logo-card"><img src="assets/tableau.png" alt="Tableau" /></div>
+                </div>
+            </div>
+            <button class="slider-btn next" onclick="slide(this, 1)">&#10095;</button>
+        </div>
+    </section>
+    <!-- DevOps & Environnements -->
+    <section class="logo-row">
+        <h3 class="main-title-medium">DevOps</h3>
+        <div class="slider-wrapper">
+            <button class="slider-btn prev"onclick="slide(this, -1)">&#10094;</button>
+            <div class="logo-slider">  
+                <div class="logo-track">
+                    <div class="logo-card"><img src="assets/docker.svg" alt="Docker" /></div>
+                    <div class="logo-card"><img src="assets/jenkins.png" alt="Jenkins" /></div>
+                    <div class="logo-card"><img src="assets/gitlab.svg" alt="GitLab CI/CD" /></div>
+                    <div class="logo-card"><img src="assets/linux.png" alt="Linux" /></div>
+                    <div class="logo-card"><img src="assets/google.svg" alt="Google Cloud Platform" /></div>
+                </div>
+            </div>
+            <button class="slider-btn next" onclick="slide(this, 1)">&#10095;</button>
+        </div>
+    </section>
+     <!-- Frontend -->
+    <section class="logo-row">
+        <h3 class="main-title-medium">Technologies Frontend</h3>
+        <div class="slider-wrapper">
+            <button class="slider-btn prev" onclick="slide(this, -1)">&#10094;</button>
+            <div class="logo-slider">  
+                <div class="logo-track">
+                    <div class="logo-card"><img src="assets/javascript.png" alt="Javascript" /></div>
+                    <div class="logo-card"><img src="assets/html-logo.png" alt="html" /></div>
+                    <div class="logo-card"><img src="assets/css.png" alt="CSS" /></div>
+                    <div class="logo-card"><img src="assets/vuejs.svg" alt="Vuejs" /></div>
+                    <div class="logo-card"><img src="assets/bootsrap.png" alt="bootstrap" /></div>
+                </div>
+            </div>
+            <button class="slider-btn next" onclick="slide(this, 1)">&#10095;</button>
+        </div>
+    </section>
+    <section class="logo-row">
+        <h3 class="main-title-medium">Outils techniques</h3>
+        <div class="slider-wrapper">
+            <button class="slider-btn prev" onclick="slide(this, -1)">&#10094;</button>
+            <div class="logo-slider">  
+                <div class="logo-track">
+                    <div class="logo-card"><img src="assets/vscode.png" alt="VS Code" /></div>
+                    <div class="logo-card"><img src="assets/pycharm.png" alt="PyCharm" /></div>
+                    <div class="logo-card"><img src="assets/jupyter.png" alt="Jupyter Notebook" /></div>
+                    <div class="logo-card"><img src="assets/git.png" alt="Git" /></div>
+                    <div class="logo-card"><img src="assets/jira.png" alt="Jira" /></div>
+                </div>
+            </div>
+            <button class="slider-btn next" onclick="slide(this, 1)">&#10095;</button>
+        </div>
+    </section>
+    <section class="logo-row">
+    <h3 class="main-title-medium">Compétences comportementales</h3>
+    <ul class="soft-skills-list">
+        <li><i class="fa-solid fa-people-group"></i> Travail en équipe</li>
+        <li><i class="fa-solid fa-comments"></i> Communication</li>
+        <li><i class="fa-solid fa-lightbulb"></i> Créativité</li>
+        <li><i class="fa-solid fa-person-chalkboard"></i> Adaptabilité</li>
+        <li><i class="fa-solid fa-clock"></i> Gestion du temps</li>
+        <li><i class="fa-solid fa-brain"></i> Solution</li>
+    </ul>
+    </section>
+    <!-- footer -->
+    <footer>
+        <p>© 2025 Claudia. Tous droits réservés.</p>
+        <a href="https://github.com/Xime1123" target="_blank" style="color:white"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/claudia-palacio-02407511b/" target="_blank" style="color:white"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:cxpalacioo@gmail.com" style="color:white"><i class="fa-solid fa-envelope"></i></a>
+    </footer>
+
+</body>
+<script>
+    const cardsPerView = 5;
+
+    function slide(button, direction) {
+    const wrapper = button.closest(".slider-wrapper");
+    const track = wrapper.querySelector(".logo-track");
+    const cards = wrapper.querySelectorAll(".logo-card");
+
+    const cardWidth = cards[0].offsetWidth + 16; 
+    const totalCards = cards.length;
+    const maxIndex = Math.ceil(totalCards / cardsPerView) - 1;
+
+    let currentIndex = parseInt(wrapper.dataset.index) || 0;
+    currentIndex += direction;
+    if (currentIndex < 0) currentIndex = 0;
+    if (currentIndex > maxIndex) currentIndex = maxIndex;
+
+    const offset = currentIndex * cardWidth * cardsPerView;
+    track.style.transform = `translateX(-${offset}px)`;
+    wrapper.dataset.index = currentIndex;
+  }
+</script>
+
+</html>
